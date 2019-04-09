@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Product App</title>
+      <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css"> <!-- include bootstrap lib -->
+      <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    </head>
+  <body>
+    <!-- Vue.js front end with node.js backend development -->
+    <div class="nav-bar"></div>
+    <div></div>
+    <div id="app">
+        <product :premium="premium"></product>
+        
+    </div>
+    <!-- <script src="https://unpkg.com/vue"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script> <!-- on this way vue and node.js are in separated files, call to nodejs file in this case main.js -->
+
+    <!-- <script type="text/javascript">
+        var appProduct = new Vue({
+            el: '#app',
+            data: {
+                product: 'Boots',
+                image: './Node_tutorial/boots2.jpg',
+                inStock: false,
+                inventory: 8
+            },
+        });
+    </script> -->
+  </body>
+</html>
+
+
+<!-- class="color-box"
+:style="{ background-color: variant.variantColor}"
+@mouseover="updateProduct(variant.variantImage)" -->

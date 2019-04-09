@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Vue front end tutorial</title>
+    </head>
+  <body>
+    
+    <div id="app">
+      <p>{{ message }}</p>
+    </div>
+    <!-- <script src="https://unpkg.com/vue"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <script type="text/javascript">
+        var comp = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue front end!'
+            },
+        });
+    </script>
+  </body>
+</html>
